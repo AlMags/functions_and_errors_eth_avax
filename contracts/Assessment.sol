@@ -6,8 +6,9 @@ contract Assessment {
 
     uint public sampleBalance = 5;
 
-    function aRequire(uint x) public pure{
+    function aRequire(uint x) public pure returns (string memory){
         require(x >= 5, "Must be greater than 5");
+        return "Test Successful";
     }
 
     function aRevert(uint x) public pure{
